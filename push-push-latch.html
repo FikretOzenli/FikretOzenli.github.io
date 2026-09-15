@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Push-Push Latch — Mechanism Design — Fikret Can Ozenli</title>
+<meta name="description" content="A latch that locks on the first push and releases on the second, developed from first principles rather than copied.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<a class="back" href="index.html">Back to all projects</a>
+
+<header class="proj-head">
+  <h1>Push-Push Latch — Mechanism Design</h1>
+  <dl class="fields">
+<div class="field"><dt>Type</dt><dd>Self-initiated mechanism study</dd></div><div class="field"><dt>Materials</dt><dd>MJF PA12, steel, stainless sheet</dd></div><div class="field"><dt>Tools</dt><dd>Autodesk Inventor</dd></div><div class="field"><dt>Scope</dt><dd>Concept to manufacture</dd></div>
+  </dl>
+</header>
+
+<p><b class="lab">Brief</b> Self-initiated mechanism study. Push-push latches are familiar from pens and cabinet catches, but the internal principle varies considerably between designs. The objective was to develop my own working principle rather than reproduce an existing one: a latch that locks on the first push and releases on the second, returning under its own spring force.</p>
+<p><b class="lab">Approach</b> A plunger slides axially in a groove, carrying a front ramp, a rear ramp and a slot in its underside. Beneath it sits a spring-loaded pin — the stroke pawn — held in a reciprocating pin housing that can only move perpendicular to the plunger’s axis. A spring-loaded return piece shares the plunger’s groove at the far end of its travel.</p>
+<p>On the first push, the plunger’s front ramp meets the stroke pawn’s chamfer and drives it down into its pit. Once the ramp has passed, the pawn springs back up into the plunger’s slot, blocking its return. Pushing further brings the plunger’s rear ramp against the housing’s ramp, driving the housing perpendicular to the plunger’s axis so the pawn slides out from under it and the latch releases. The pawn rises to its full height, where the plunger’s side wall prevents it dropping back into the slot. Meanwhile the plunger has compressed the return piece, which drives it back out once the pushing force is released. As the plunger withdraws, the housing returns to its rest position and places the pawn back in the plunger’s path.</p>
+<p class="bulhead">Key decisions</p>
+<ul class="bul">
+  <li>Stroke pawn geometry was the hardest part of the design, because four requirements are coupled. The pawn must protrude far enough above the plunger’s slot to latch with margin; compress far enough for the plunger to pass over it; retain enough engagement depth in its bore to resist bending and tilting under the plunger’s side load; and leave room beneath it for a spring capable of delivering the return force. Changing any one of the slot depth, pawn height, bore depth or spring free length moves all the others, so the arrangement had to be resolved as a system rather than feature by feature.</li>
+  <li>Sliding interfaces drove the material split. A stainless sheet is let into the casing floor so the housing runs on metal rather than PA12 against PA12, which has the widest friction spread and the worst tendency to stick-slip of the available pairings. The stroke pawn is steel, both because its tip takes repeated ramp impact and because steel in a PA12 bore is the best-behaved sliding fit available.</li>
+  <li>Insertion and release forces were sized from the spring rates and ramp geometry, using the wedge relationship to account for friction at the ramps and in the plunger’s groove. Ramp angles were checked against the friction angle to confirm the wedge cannot self-lock.</li>
+</ul>
+<figure>
+  <img src="images/fig15.jpg" alt="Figure 15 — Internal arrangement with top casing hidden">
+  <figcaption>Figure 15 — Internal arrangement with top casing hidden</figcaption>
+</figure>
+<figure>
+  <img src="images/fig16.jpg" alt="Figure 16 — Latched position on LHS, released position on RHS">
+  <figcaption>Figure 16 — Latched position on LHS, released position on RHS</figcaption>
+</figure>
+
+<footer>
+<a href="index.html">All projects</a> &nbsp;·&nbsp; fikretcanozenli@gmail.com
+</footer>
+</div>
+</body>
+</html>

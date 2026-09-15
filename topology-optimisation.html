@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FEA / Topology Optimisation Routine — Fikret Can Ozenli</title>
+<meta name="description" content="An APDL routine that iteratively removes unstressed material from a component while preserving load paths.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<a class="back" href="index.html">Back to all projects</a>
+
+<header class="proj-head">
+  <h1>FEA / Topology Optimisation Routine</h1>
+  <dl class="fields">
+<div class="field"><dt>Employer</dt><dd>FEM Expert</dd></div><div class="field"><dt>Period</dt><dd>May 2022 – Sep 2022</dd></div><div class="field"><dt>Location</dt><dd>Madrid, Spain</dd></div><div class="field"><dt>Field</dt><dd>FEA and structural analysis</dd></div>
+  </dl>
+</header>
+
+<p>My first engineering role, focused on simulation. Day to day I ran FEA analyses of components in ANSYS APDL, contributing to design stability assessments and topology optimisation studies. It was where I learned to work analytically. I learnt to set a problem up carefully, question the results, and understand what the model was and was not telling me.</p>
+<h2 class="sub">Project 1 — FEA / Topology optimisation routine</h2>
+<p><b class="lab">Problem</b> Some components designed for specific loads and use cases are inefficient in weight, cost and material use because they are excessively bulky. FEA is an efficient tool to visualize the stress distribution and detect parts of the components which are basically “unused”, however to run separate simulations and redefining geometry of parts at every iteration is a complex and time consuming task.</p>
+<p><b class="lab">Approach</b> Using APDL language in ANSYS Mechanical, I wrote a routine that automates the process, running iterative simulations and modifications on the part design. The general principle was to calculate the stress levels on each element and remove low stress parts and redo the analysis until desired material loss was achieved.</p>
+<p><b class="lab">Outcome</b> I created an automated script that can be used in different scenarios and different components. Below is one of my test cases (actual component simulations cannot be shared): a flat plate supported at the top and bottom left corners, loaded at the top right corner.</p>
+<figure>
+  <img src="images/fig04.jpg" alt="Figure 4 — FEA topology optimization">
+  <figcaption>Figure 4 — FEA topology optimization</figcaption>
+</figure>
+<figure>
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/xJjLbbNX204" title="The full simulation" loading="lazy" allowfullscreen allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture"></iframe>
+  </div>
+  <figcaption>The full simulation</figcaption>
+</figure>
+
+<footer>
+<a href="index.html">All projects</a> &nbsp;·&nbsp; fikretcanozenli@gmail.com
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Controller for EV Torque Transition — Fikret Can Ozenli</title>
+<meta name="description" content="Replacing hand-calibrated torque maps with a reinforcement learning agent, validated by co-simulation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<a class="back" href="index.html">Back to all projects</a>
+
+<header class="proj-head">
+  <h1>AI Controller for EV Torque Transition</h1>
+  <dl class="fields">
+<div class="field"><dt>Employer</dt><dd>Toyota Motor Europe</dd></div><div class="field"><dt>Period</dt><dd>Jul 2023 – Jan 2024</dd></div><div class="field"><dt>Location</dt><dd>Brussels, Belgium</dd></div><div class="field"><dt>Field</dt><dd>Electric vehicle driveability</dd></div>
+  </dl>
+</header>
+
+<p>Through this internship I had the chance to join the Powertrain department in Toyota Motor Europe at the Toyota Technical Centre R&amp;D facility based in Zaventem, Belgium. A research-focused role on the control side rather than the mechanical side. I worked on smoothing torque transition in electric vehicles — developing and testing an AI controller in MATLAB and Simcenter AMESim, and using real track test data to refine both the model and the control strategy iteratively.</p>
+<p>Key skills gained were control theory, data analysis, AI and simulation experience especially in vehicle dynamics and frequency response. Due to confidentiality reasons, I am limited in details I can give.</p>
+<h2 class="sub">Project — AI controller for EV torque transition</h2>
+<p><b class="lab">Problem</b> The torque smoothening was carried out by many hard coded maps calibrated by lots of tests in extensive processes.</p>
+<p><b class="lab">Approach</b> To replace the hard coded maps with Reinforcement Learning agent that can learn the torque transition by repeated simulation training simplifying the control logic.</p>
+<p><b class="lab">Validation</b> Used AMESim (Vehicle model) – MATLAB (RL Agent) models to co-simulate the two and validate the response of the vehicle in terms of driveability and vehicle dynamics.</p>
+<p><b class="lab">Outcome</b> I proved the concept that the RL Agent was able to learn and smooth the torque transition. It was also compatible to the control logic for the specific vehicle model. Moreover, a reward function was also developed that was adjustable between different drive modes. However, due to lack of testing time, it was not implemented in physical testing. The results were based purely on the vehicle model, which has its own accuracy limitations.</p>
+<figure>
+  <img src="images/fig03.jpg" alt="Figure 3 — Toyota bZ4X was the vehicle I worked on.">
+  <figcaption>Figure 3 — Toyota bZ4X was the vehicle I worked on.</figcaption>
+</figure>
+
+<footer>
+<a href="index.html">All projects</a> &nbsp;·&nbsp; fikretcanozenli@gmail.com
+</footer>
+</div>
+</body>
+</html>

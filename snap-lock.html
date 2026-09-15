@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Push-to-Release Snap Lock — Mechanism Design — Fikret Can Ozenli</title>
+<meta name="description" content="A latch holding tension that releases consistently regardless of applied load, using an out-of-plane release path.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<a class="back" href="index.html">Back to all projects</a>
+
+<header class="proj-head">
+  <h1>Push-to-Release Snap Lock — Mechanism Design</h1>
+  <dl class="fields">
+<div class="field"><dt>Type</dt><dd>Self-initiated mechanism study</dd></div><div class="field"><dt>Materials</dt><dd>MJF PA12, steel</dd></div><div class="field"><dt>Tools</dt><dd>Autodesk Inventor</dd></div><div class="field"><dt>Scope</dt><dd>Concept to manufacture</dd></div>
+  </dl>
+</header>
+
+<p><b class="lab">Brief</b> Self-initiated project to develop mechanism design skills. Objective: a compact push-to-lock, push-to-release latch that holds tension securely and releases consistently regardless of the load applied to it.</p>
+<p><b class="lab">Approach</b> An arrowhead pin enters a frame and spreads two spring-loaded pawls, which return behind the barb to lock. Release is achieved by displacing the pawls out of the locking plane rather than spreading them, so the release path is independent of the direction of applied load.</p>
+<p class="bulhead">Key decisions</p>
+<ul class="bul">
+  <li>Out-of-plane release: chosen over a spreading release so that tension on the latch cannot contribute to unlatching, and so release force does not vary with applied load.</li>
+  <li>Return springs: compression springs seated on captive posts rather than torsion springs — simpler to locate, more forgiving on tolerances, and available from stock rather than custom.</li>
+  <li>Spring selection: sized from the required holding force and the travel at full pawl opening, with preload set so the pawls are held firmly closed at rest, and solid height checked against the geometric hard stop.</li>
+  <li>Insertion geometry: 45° ramp on the arrowhead, checked against the friction angle to confirm the wedge cannot self-lock, with the friction penalty accounted for when sizing the springs.</li>
+  <li>Manufacture: MJF-printed PA12 frame and pawls with heat-set threaded inserts, and steel for the arrowhead and pivot pins where wear and contact stress concentrate. Using MJF printing reduces the cost and weight substantially while keeping the loaded interfaces in metal to have higher durability and resistance to wear.</li>
+  <li>Self-criticism: As a self-initiated learning project, I did not design any mounting interface into the casing so the lock does not fasten anything to anything else — it only latches to itself.</li>
+</ul>
+<figure>
+  <img src="images/fig12.jpg" alt="Figure 12 — Completed view on LHS, top casing invisible on RHS.">
+  <figcaption>Figure 12 — Completed view on LHS, top casing invisible on RHS.</figcaption>
+</figure>
+<ul class="bul">
+  <li>The bottom counterpart was initially a single machined part. To improve manufacturability and reduce cost, I switched to a screwed assembly of an MJF-printed base and a steel arrowhead pin.</li>
+</ul>
+<figure>
+  <img src="images/fig13.jpg" alt="Figure 13 — Snap lock bottom counterpart.">
+  <figcaption>Figure 13 — Snap lock bottom counterpart.</figcaption>
+</figure>
+<figure>
+  <img src="images/fig14.jpg" alt="Figure 14 — Locked form on LHS, pressed to release form on RHS.">
+  <figcaption>Figure 14 — Locked form on LHS, pressed to release form on RHS.</figcaption>
+</figure>
+
+<footer>
+<a href="index.html">All projects</a> &nbsp;·&nbsp; fikretcanozenli@gmail.com
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GNSS Base Station — 6 m Deployable Mast — Fikret Can Ozenli</title>
+<meta name="description" content="A 6 m mast under 40 kg that assembles by hand without tools and packs into a pickup bed.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<a class="back" href="index.html">Back to all projects</a>
+
+<header class="proj-head">
+  <h1>GNSS Base Station — 6 m Deployable Mast</h1>
+  <dl class="fields">
+<div class="field"><dt>Type</dt><dd>Self-directed design concept</dd></div><div class="field"><dt>Material</dt><dd>6061 aluminium, anodised</dd></div><div class="field"><dt>Tools</dt><dd>Autodesk Inventor, MATLAB</dd></div><div class="field"><dt>Constraints</dt><dd>6 m deployed · under 40 kg · tool-free</dd></div>
+  </dl>
+</header>
+
+<p><b class="lab">Brief</b> Design concept for a portable GNSS base station mast: 6 m deployed height, under 40 kg, tool-free hand installation, protection against moisture, dust and dirt, suitable for rugged outdoor use, and packable into the bed of a pickup truck.</p>
+<p><b class="lab">Approach</b> The approach taken was to build a retractable mast with rails to compress from 6 m to 1.5 m. The design combines welded components, laser-cut platework and standard off-the-shelf parts. Taking inspiration from tripod GNSS bases.</p>
+<p>The structure consists of 4 triangular-prism like trusses scaled down to a smaller size nested with a concentric radii. Each level contains the same elements where the bottom and top triangles are formed by hollow aluminium tubes connected by middle pieces and 60° welded corner nodes. The top and bottom triangles are connected to each other via vertical base plates screwed onto the middle pieces.</p>
+<p class="bulhead">Key decisions</p>
+<ul class="bul">
+  <li>Material: 6061 aluminium, anodised. The members are extruded hollow tube, which rules out 5052 (poor extrudability); 6061 extrudes, welds, threads and anodises well, satisfying all four constraints at once.</li>
+  <li>Corner nodes: welded from two angle-cut tube stubs rather than machined from billet. The nodes must be hollow to meet the weight target, which makes billet machining impractical, and casting is not justified at this volume.</li>
+  <li>Connections: threaded tube-to-node joints, chosen over a slip fit for positive resistance to pull-out under wind and self-weight loading.</li>
+  <li>Environmental protection: right-sized to the requirement. The structural joints are not pressurised, so corrosion protection via a shedding cover was specified rather than a leak-tight seal.</li>
+  <li>A MATLAB script was used to calculate the distance between the two concentric triangle sides and length of each side at every level.</li>
+</ul>
+<figure>
+  <img src="images/fig08.jpg" alt="Figure 8 — Compressed and extended views">
+  <figcaption>Figure 8 — Compressed and extended views</figcaption>
+</figure>
+<figure>
+  <img src="images/fig09.jpg" alt="Figure 9 — First level">
+  <figcaption>Figure 9 — First level</figcaption>
+</figure>
+<ol class="parts" start="1" style="counter-reset: part 0">
+  <li><a href="https://www.item24.com/en-be/linear-guide-rail-ps-4-20-67553" target="_blank" rel="noopener">Linear guide rail PS 4-20 — ITEM</a></li>
+  <li><a href="https://www.item24.com/en-at/adjustable-foot-80x40-m12x120-60893?thread=12&adjustingRange=37" target="_blank" rel="noopener">Adjustable foot 80x40 M12x120 — ITEM</a></li>
+</ol>
+<figure>
+  <img src="images/fig10.jpg" alt="Figure 10 — Interface between levels">
+  <figcaption>Figure 10 — Interface between levels</figcaption>
+</figure>
+<ol class="parts" start="3" style="counter-reset: part 2">
+  <li><a href="https://www.elesa-ganter.com/en/www/latches--snap-door-lock--bmsvl" target="_blank" rel="noopener">Snap door lock BMSVL, lever release — Elesa+Ganter</a></li>
+  <li><a href="https://www.elesa-ganter.com/en/www/latches--snap-door-lock--bms" target="_blank" rel="noopener">Snap door lock BMS, simpler version — Elesa+Ganter</a></li>
+  <li><a href="https://www.item24.com/en-it/bearing-carriage-ps-4-20-66639?numberBearings=4&railWidthList=20" target="_blank" rel="noopener">Bearing carriage PS 4-20 — ITEM</a></li>
+</ol>
+<figure>
+  <img src="images/fig11.jpg" alt="Figure 11 — MATLAB script to calculate side lengths">
+  <figcaption>Figure 11 — MATLAB script to calculate side lengths</figcaption>
+</figure>
+
+<footer>
+<a href="index.html">All projects</a> &nbsp;·&nbsp; fikretcanozenli@gmail.com
+</footer>
+</div>
+</body>
+</html>

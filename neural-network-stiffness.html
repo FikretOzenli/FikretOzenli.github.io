@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neural Network for Joint Stiffness Prediction — Fikret Can Ozenli</title>
+<meta name="description" content="Predicting the stiffness of complex tubular joints from their force–deflection response, using a network built from scratch in Python.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<a class="back" href="index.html">Back to all projects</a>
+
+<header class="proj-head">
+  <h1>Neural Network for Joint Stiffness Prediction</h1>
+  <dl class="fields">
+<div class="field"><dt>Employer</dt><dd>FEM Expert</dd></div><div class="field"><dt>Period</dt><dd>May 2022 – Sep 2022</dd></div><div class="field"><dt>Location</dt><dd>Madrid, Spain</dd></div><div class="field"><dt>Dataset</dt><dd>~100,000 FEA simulations</dd></div>
+  </dl>
+</header>
+
+<h2 class="sub">Project 2 — Neural network for joint stiffness prediction</h2>
+<p><b class="lab">Problem</b> A proof-of-concept study alongside senior engineers, predicting the stiffness of complex mechanical joints from their force–deflection response using a neural network trained on roughly 100,000 FEA simulations. Beam elements are widely used for tubular structures because they are computationally cheap, but their simplified formulation reduces two different junction geometries to the same representation:</p>
+<figure>
+  <img src="images/fig05.jpg" alt="Figure 5 — Two different junction geometries reduced to the same beam representation">
+  <figcaption>Figure 5 — Two different junction geometries reduced to the same beam representation</figcaption>
+</figure>
+<p>To resolve this while keeping the efficiency of beam elements, a novel joint was devised: a junction built from six zero-length elements defining its stiffness in six degrees of freedom. The goal was to determine whether those stiffness values could be predicted by a neural network, using the force and deviation matrices as input — a proof of concept for ANN–FEM cooperation.</p>
+<figure>
+  <img src="images/fig06.jpg" alt="Figure 6 — Novel junction built from six zero-length elements">
+  <figcaption>Figure 6 — Novel junction built from six zero-length elements</figcaption>
+</figure>
+<p><b class="lab">Approach</b> I had almost no machine learning background at the time — one semester of coursework — and deliberately chose not to use ready-made libraries such as Keras or PyTorch. I did not want a black box; I wanted to understand how the method actually worked, so I built the entire network from scratch in raw Python. It took about a week and a half, and it worked. What I take from it is less the result than the approach: I chose the harder path in order to understand something properly, and taught myself a difficult subject quickly from first principles.</p>
+<p><b class="lab">Outcome</b> The published paper can be read here:</p>
+<p><a href="https://www.mdpi.com/2227-7390/11/15/3261">Read the published paper</a></p>
+<figure>
+  <img src="images/fig07.jpg" alt="Figure 7 — Training Dataset MSE vs Validation Dataset MSE">
+  <figcaption>Figure 7 — Training Dataset MSE vs Validation Dataset MSE</figcaption>
+</figure>
+
+<footer>
+<a href="index.html">All projects</a> &nbsp;·&nbsp; fikretcanozenli@gmail.com
+</footer>
+</div>
+</body>
+</html>
